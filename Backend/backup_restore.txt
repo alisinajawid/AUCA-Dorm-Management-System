@@ -1,0 +1,7 @@
+# Create backups (Terminal)
+pg_dump -U postgres -d postgres --schema=dorm_mgmt --format=plain   --file ~/Desktop/"Fall 2025/Database/final-dorm/dorm_mgmt_full.sql"
+pg_dump -U postgres -d postgres --schema=dorm_mgmt --format=custom  --file ~/Desktop/"Fall 2025/Database/final-dorm/dorm_mgmt.dump"
+
+# Restore test (Terminal)
+psql -U postgres -d postgres -c "DROP SCHEMA IF EXISTS dorm_mgmt CASCADE; CREATE SCHEMA dorm_mgmt;"
+pg_restore -U postgres -d postgres ~/Desktop/"Fall 2025/Database/final-dorm/dorm_mgmt.dump"

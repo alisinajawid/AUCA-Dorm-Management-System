@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "## Deliverables - ER diagram & normalized schema (in schema.sql comments + this README) - Implementation in PostgreSQL (schema.sql, seed.sql, indexes.sql) - SQL queries:   - Basic: queries_basic.sql   - Advanced (windows/CTEs/aggregations): queries_advanced.sql - Transactions demo (tx_demo.sql) - Backup & restore strategy (backup_restore.txt)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.16.3"
+  }
+}
